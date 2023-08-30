@@ -62,7 +62,7 @@ class CommonConfig:
         "操作日期": str,
         "委托编号": str,
         "申请编号": str,
-        "合同编号": str,
+        "委托编号": str,
         "证券代码": str,
         "股东代码": str,
         "资金帐号": str,
@@ -70,9 +70,10 @@ class CommonConfig:
         "发生日期": str,
     }
 
-    CANCEL_ENTRUST_ENTRUST_FIELD = "合同编号"
+    CANCEL_ENTRUST_ENTRUST_FIELD = "委托编号"
     CANCEL_ENTRUST_GRID_LEFT_MARGIN = 50
-    CANCEL_ENTRUST_GRID_FIRST_ROW_HEIGHT = 30
+    # CANCEL_ENTRUST_GRID_FIRST_ROW_HEIGHT = 30
+    CANCEL_ENTRUST_GRID_FIRST_ROW_HEIGHT = 35
     CANCEL_ENTRUST_GRID_ROW_HEIGHT = 16
 
     AUTO_IPO_SELECT_ALL_BUTTON_CONTROL_ID = 1098
@@ -90,7 +91,7 @@ class YH(CommonConfig):
         "操作日期": str,
         "委托编号": str,
         "申请编号": str,
-        "合同编号": str,
+        "委托编号": str,
         "证券代码": str,
         "股东代码": str,
         "资金帐号": str,
@@ -117,7 +118,7 @@ class HT(CommonConfig):
         "操作日期": str,
         "委托编号": str,
         "申请编号": str,
-        "合同编号": str,
+        "委托编号": str,
         "证券代码": str,
         "股东代码": str,
         "资金帐号": str,
@@ -135,7 +136,7 @@ class GJ(CommonConfig):
         "操作日期": str,
         "委托编号": str,
         "申请编号": str,
-        "合同编号": str,
+        "委托编号": str,
         "证券代码": str,
         "股东代码": str,
         "资金帐号": str,
@@ -153,7 +154,7 @@ class GF(CommonConfig):
         "操作日期": str,
         "委托编号": str,
         "申请编号": str,
-        "合同编号": str,
+        "委托编号": str,
         "证券代码": str,
         "股东代码": str,
         "资金帐号": str,

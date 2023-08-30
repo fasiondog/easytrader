@@ -24,6 +24,13 @@ def error_handle(func):
     return wrapper
 
 
+@app.before_request
+def restrict_ip():
+    allowed_ips = ['127.0.0.1', '192.168.0.0'] # 允许访问的 IP 列表
+    if request.remote_addr not in allowed_ips:
+        return 'You are not allowed to access this page', 403
+
+
 @app.route("/prepare", methods=["POST"])
 @error_handle
 def post_prepare():
@@ -132,4 +139,4 @@ def get_exit():
 
 
 def run(port=1430):
-    app.run(host="0.0.0.0", port=port)
+    app.run(port=port)

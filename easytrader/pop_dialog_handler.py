@@ -35,7 +35,7 @@ class PopDialogHandler:
         return {"message": "unknown message: {}".format(content)}
 
     def _extract_content(self):
-        return self._app.top_window().Static.window_text()
+        return self._app.top_window().Edit.window_text()
 
     @staticmethod
     def _extract_entrust_id(content):
@@ -86,6 +86,7 @@ class TradePopDialogHandler(PopDialogHandler):
 
         if title == "提示":
             content = self._extract_content()
+            print(content)
             if "成功" in content:
                 entrust_no = self._extract_entrust_id(content)
                 self._submit_by_click()
